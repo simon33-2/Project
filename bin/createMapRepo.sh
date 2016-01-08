@@ -31,6 +31,14 @@ function usage() {
   echo "  admin_token_file = file with one line, an an organization owner"
   echo "  bot_token_file = personal access token of the github account"
   echo "  bot_password_file =  file containing the password of the bot account"
+  echo ""
+  echo "Detailed:"
+  echo "  To get started you will need to set up three files that each contain one line, a password or security token."
+  echo "  Once you have these files, create a folder called "maps" (or similar),"
+  echo "     this is where all the map repo clones will live (including the Project repo)."
+  echo "  Next, this script operates on all 'zip' files in the current folder."
+  echo "    To update or a create a new map, simply place the zip(s) in the 'maps' folder"
+  echo "  Finally, run this script './Project/bin/createRepo.sh -a <args...> -b <args..> -p <args... >'
   exit 1
 }
 
